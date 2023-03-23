@@ -30,7 +30,8 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-dependencies:2.0.5.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-
+    implementation 'org.projectlombok:lombok:1.18.8'
+	annotationProcessor 'org.projectlombok:lombok:1.18.8'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     
     // implementation 'com.alibaba:fastjson:1.2.58'
