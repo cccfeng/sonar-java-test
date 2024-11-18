@@ -14,6 +14,13 @@ public class HelloController {
         return hello;
     }
 
+    @RequestMapping("/msg2")
+    public ExampleData msg2() {
+        ExampleData hello = ExampleData.builder().msg("hello2").build();
+        System.out.println(hello.getMsg());
+        return hello;
+    }
+
     @RequestMapping("/")
     public String index() {
         return "Greetings from Spring Boot! V4";
