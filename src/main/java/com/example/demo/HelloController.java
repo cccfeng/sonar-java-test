@@ -21,6 +21,14 @@ public class HelloController {
         return hello;
     }
 
+
+    @RequestMapping("/msg3")
+    public ExampleData msg3() {
+        ExampleData hello = ExampleData.builder().msg("hello3").build();
+        System.out.println(hello.getMsg());
+        return hello;
+    }
+
     @RequestMapping("/")
     public String index() {
         return "Greetings from Spring Boot! V4";
