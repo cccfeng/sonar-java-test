@@ -34,3 +34,5 @@ jobs:
         ls -al
         ls -al ./target/site/jacoco
         
+        mvn sonar:sonar -Dsonar.organization=cccfeng -Dsonar.projectKey=cccfeng_sonar-java-test -Dsonar.sources=.  -Dsonar.host.url=https://sonarcloud.io 
+        
